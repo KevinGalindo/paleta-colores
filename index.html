@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obten paleta de color de una imagen</title>
+    <link rel="stylesheet" href="css/stylo.css">
+</head>
+<body>
+
+    <!-- Input y drag -->
+    <div class="suburImg">
+        <div class="drap zona-arrastre">
+            <label for="btn-subir"><span id="text-subir">Sube una imagen</span> <i class="fa-solid fa-image"></i></i></label>
+            
+        </div>
+
+        <input type="file" name="file" id="btn-subir" accept=".jpg,.png">
+    </div>
+
+    <!-- modal -->
+    <div class="cortina">
+
+        <div class="profile-card">
+            <div class="top-section">
+                <i class="cerrar fa-solid fa-xmark"></i>
+                <div class="pic">
+                    <!-- <img src="img2.jpg" alt="image"> -->
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="names">
+                    <span id="hexadecimal">#000000 <i class="fa-regular fa-copy"></i></span>
+                    <span id="tex-rgb"></span><i class="faposition fa-regular fa-copy"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="con-img">
+
+        <h1 class="h1">Sube una imagen</h1>
+        <!-- Aqui aparecen las imagenes -->
+        <div class="tamano">
+        </div>
+
+        <!-- Este es el canvas -->
+        <canvas id="canvass" ></canvas>
+
+        <div class="setion-color" id="conten-color">
+
+            <h2>Colores</h2>
+
+            <div class="colores">
+                <div class="colores-principales">
+                    <div id="primer" class="color-prin"></div>
+                    <div id="segundo" class="color-prin"></div>
+
+                </div>
+                <div class="paleta">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- Mi Script -->
+    <script src="js/script.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/17152a75e6.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
